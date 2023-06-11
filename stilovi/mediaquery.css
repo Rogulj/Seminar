@@ -1,0 +1,24 @@
+@media all and (max-width: 1000px) {
+  .city.show {
+    flex-direction: column;
+  }
+  .weather-card {
+    margin-top: 5px;
+  }
+  .sun,
+  .cloud {
+    width: 150px;
+    height: 150px;
+  }
+  .sun {
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+  .cloud {
+    margin-right: 25px;
+    margin-left: 10px;
+  }
+  header {
+    height: 200px;
+  }
+}

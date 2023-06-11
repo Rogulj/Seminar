@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./stilovi/drop_down_menu.css">
+    <link rel="stylesheet" href="./stilovi/cards.css">
+    <link rel="stylesheet" href="./stilovi/header.css">
+    <link rel="stylesheet" href="./stilovi/mediaquery.css">
+
+    <script src="./js/script.js" defer></script>
+    <script src="./js/classes.js" defer></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <img class="sun" src="./Images/sun.png" alt="sun_image">
+            <h1>vremenska prognoza</h1>
+            <img class="cloud" src="./Images/cloud.png" alt="cloud">
+        </div>
+        <div class="header2">
+            <nav class="header-nav">
+                <a href="#">Naslovna</a>
+                <a href="#">Informacije</a>
+                <a href="#">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+    <nav class="drop-btn-container">
+        <div class="drop-btn">
+            Odaberi grad <span class="fas fa-caret-down"></span>
+        </div>
+        <div class="wrapper">
+            <ul class="menu-bar">
+                <li><a class="grad dubrovnik" href="#">Dubrovnik</a></li>
+                <li><a class="grad osijek" href="#">Osijek</a></li>
+                <li><a class="grad rijeka" href="#">Rijeka</a></li>
+                <li><a class="grad split" href="#">Split</a></li>
+                <li><a class="grad zadar" href="#">Zadar</a></li>
+                <li><a class="grad zagreb" href="#">Zagreb</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="weather-cards">
+        <div class="city dubrovnik">
+            <div class="weather-card danas">
+                <h3 class="day">Danas</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">28&#8451;/20&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 12% <i class="fas fa-wind"></i> 5 km/h</span>
+            </div>
+            <div class="weather-card sutra">
+                <h3 class="day">Sutra</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">30&#8451;/21&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 1% <i class="fas fa-wind"></i> 12 km/h</span>
+            </div>
+            <div class="weather-card prekosutra">
+                <h3 class="day">Prekosutra</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">31&#8451;/23&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 2% <i class="fas fa-wind"></i> 3 km/h</span>
+            </div>
+        </div>
+        <div class="city osijek">
+            <div class="weather-card danas">
+                <h3 class="day">Danas</h3>
+                <img class="icon" src="./Images/storm_icon.png" alt="sun_icon">
+                <span class="temp">25&#8451;/26&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 60% <i class="fas fa-wind"></i> 20 km/h</span>
+            </div>
+            <div class="weather-card sutra">
+                <h3 class="day">Sutra</h3>
+                <img class="icon" src="./Images/rain.png" alt="sun_icon">
+                <span class="temp">30&#8451;/21&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 80% <i class="fas fa-wind"></i> 15 km/h</span>
+            </div>
+            <div class="weather-card prekosutra">
+                <h3 class="day">Prekosutra</h3>
+                <img class="icon" src="./Images/cloud_icon.png" alt="sun_icon">
+                <span class="temp">31&#8451;/23&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 2% <i class="fas fa-wind"></i> 10 km/h</span>
+            </div>
+        </div>
+        <div class="city rijeka">
+            <div class="weather-card danas">
+                <h3 class="day">Danas</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">27&#8451;/21&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 8% <i class="fas fa-wind"></i> 2 km/h</span>
+            </div>
+            <div class="weather-card sutra">
+                <h3 class="day">Sutra</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">30&#8451;/23&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 1% <i class="fas fa-wind"></i> 7 km/h</span>
+            </div>
+            <div class="weather-card prekosutra">
+                <h3 class="day">Prekosutra</h3>
+                <img class="icon" src="./Images/cloud_icon.png" alt="sun_icon">
+                <span class="temp">30&#8451;/20&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 25% <i class="fas fa-wind"></i> 10 km/h</span>
+            </div>
+        </div>
+        <div class="city split">
+            <div class="weather-card danas">
+                <h3 class="day">Danas</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">30&#8451;/20&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 2% <i class="fas fa-wind"></i> 5 km/h</span>
+            </div>
+            <div class="weather-card sutra">
+                <h3 class="day">Sutra</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">31&#8451;/21&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 5% <i class="fas fa-wind"></i> 1 km/h</span>
+            </div>
+            <div class="weather-card prekosutra">
+                <h3 class="day">Prekosutra</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">31&#8451;/23&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 1% <i class="fas fa-wind"></i> 6 km/h</span>
+            </div>
+        </div>
+        <div class="city zadar">
+            <div class="weather-card danas">
+                <h3 class="day">Danas</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">29&#8451;/21&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 12% <i class="fas fa-wind"></i> 3 km/h</span>
+            </div>
+            <div class="weather-card sutra">
+                <h3 class="day">Sutra</h3>
+                <img class="icon" src="./Images/cloud_icon.png" alt="sun_icon">
+                <span class="temp">30&#8451;/21&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 18% <i class="fas fa-wind"></i> 11 km/h</span>
+            </div>
+            <div class="weather-card prekosutra">
+                <h3 class="day">Prekosutra</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">31&#8451;/23&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 0% <i class="fas fa-wind"></i> 3 km/h</span>
+            </div>
+        </div>
+        <div class="city zagreb">
+            <div class="weather-card danas">
+                <h3 class="day">Danas</h3>
+                <img class="icon" src="./Images/cloud_icon.png" alt="sun_icon">
+                <span class="temp">28&#8451;/19&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 15% <i class="fas fa-wind"></i> 14 km/h</span>
+            </div>
+            <div class="weather-card sutra">
+                <h3 class="day">Sutra</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">29&#8451;/20&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 5% <i class="fas fa-wind"></i> 4 km/h</span>
+            </div>
+            <div class="weather-card prekosutra">
+                <h3 class="day">Prekosutra</h3>
+                <img class="icon" src="./Images/sun_icon.png" alt="sun_icon">
+                <span class="temp">29&#8451;/19&#8451;</span>
+                <span class="hum"><i class="fas fa-tint"></i> 4% <i class="fas fa-wind"></i> 3 km/h</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
